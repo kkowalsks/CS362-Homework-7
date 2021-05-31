@@ -1,7 +1,11 @@
 def numbers(x):
     check = False
     for i in range(1, 101):
-        if i % 3 == 0:
+        if (i % 3 == 0) and (i % 5 == 0):
+            print("FizzBuzz")
+            if i == x:
+                check = "FizzBuzz"
+        elif i % 3 == 0:
             print("Fizz")
             if i == x:
                 check = "Fizz"
@@ -9,7 +13,6 @@ def numbers(x):
             print("Buzz")
             if i == x:
                 check = "Buzz"
-        
         else:
             print(i)
             if i == x:
