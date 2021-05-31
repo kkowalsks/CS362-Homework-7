@@ -8,3 +8,6 @@ def test_three():
 
 def test_five():
     assert fizzbuzz.numbers(20) == "Buzz"
+
+def test_both():
+    assert fizzbuzz.numbers(15) == "FizzBuzz"
