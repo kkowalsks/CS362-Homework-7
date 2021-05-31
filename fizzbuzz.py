@@ -5,6 +5,11 @@ def numbers(x):
             print("Fizz")
             if i == x:
                 check = "Fizz"
+        elif i % 5 == 0:
+            print("Buzz")
+            if i == x:
+                check = "Buzz"
+        
         else:
             print(i)
             if i == x:
