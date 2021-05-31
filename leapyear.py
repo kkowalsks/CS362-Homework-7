@@ -9,10 +9,16 @@ def leapCheck(int):
             print(int + " is a leap year")
             return True
         else:
-            int = str(int)
-            print(int + " is not a leap year")
-            return False
+            if int % 400 != 0:
+                int = str(int)
+                print(int + " is not a leap year")
+                return False
+            else:
+                int = str(int)
+                print(int + " is a leap year")
+                return True
 
 leapCheck(2020)
 leapCheck(2021)
 leapCheck(1900)
+leapCheck(2000)
