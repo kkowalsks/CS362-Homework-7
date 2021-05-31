@@ -5,3 +5,6 @@ def test_print():
 
 def test_three():
     assert fizzbuzz.numbers(9) == "Fizz"
+
+def test_five():
+    assert fizzbuzz.numbers(20) == "Buzz"
