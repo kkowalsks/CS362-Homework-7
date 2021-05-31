@@ -6,3 +6,6 @@ def test_four():
 
 def test_hundred():
     assert leapyear.leapCheck(1900) == False
+
+def test_fourhundred():
+    assert leapyear.leapCheck(2000) == True
